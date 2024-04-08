@@ -5,7 +5,7 @@ Fecha:8 de Abril de 2024
  -->
 <!DOCTYPE html>
 <html lang="es">
-
+<!-- ubicacion de todos los metadatos -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,17 +26,18 @@ Fecha:8 de Abril de 2024
 </head>
 
 <body>
-
+<!-- creacion del header en donde esta ubicado el logo de la banda ademas de los multiples parrafos que permitirian llevar a las distintas partes de todo el documento y tambien se encuentra la lupa para encontrar palabras claves y el carrito de compra -->
     <header class="header">
         <nav class="nav">
             <section class="logo_nav-element">
+                <!-- imagen de la banda -->
                 <section class="imagen_header">
                     <img src="./public/images/placebo-logotype.webp" alt="logo_placebo">
                 </section>
-
+                <!-- en esta parte encierro todas las partes que permiten viajar por el documento -->
                 <section class="elementos_nav_box">
+                    <!-- cada elemento se encuentra dentro de su propio article y a para un mejor control de cada uno de ellos -->
                     <article class="elemenos_nav">
-
                         <a href="">
                             <p>
                                 Listen
@@ -93,7 +94,7 @@ Fecha:8 de Abril de 2024
                     </article>
                 </section>
             </section>
-
+            <!-- aqui ubico los iconos de la lupa y el carrito de compra dentro de un article para su separacion y un anchor para ser resaltados por el cursor -->
             <section class="icons">
                 <article class="icono_nav">
                     <a href="">
@@ -111,13 +112,16 @@ Fecha:8 de Abril de 2024
         </nav>
     </header>
     <main>
+        <!-- aqui ubico las cabezas flotantes que aparecen despues del header -->
         <section class="cabezas_flotantes">
             <article>
                 <img src="./public/images/PLACEBO_Home (2).webp"
                     alt="imagen de cabezas flotantes con la palabra placebo superpuesta">
             </article>
         </section>
+        <!-- aqui ubico todas las imagenes y su respectivo titulo dentro de un cajon grande para luego alterarlo usando en wrap -->
         <section class="watch_tour_order_listen">
+            <!-- aqui ubico en un anchor tanto el texto como la imagen en anchors propios y asi evitar conflictos futuros tambien ambos tienen un article comun para su futura redistribucion -->
             <article class="apartado_propio">
                 <a href="">
                     <img src="./public/images/watch.webp" alt="imagen del apartado watch">
@@ -158,17 +162,22 @@ Fecha:8 de Abril de 2024
                 </a>
             </article>
         </section>
+        <!-- en esta zona ubico todos los elelmenetos de compra para ser organizados luego -->
         <section class="zona_compras">
+            <!-- con la clase cuadrito de compra le doy las ubicaciones a los elementos que la contienen -->
             <article class="cuadrito_compras">
+
                 <article class="imagenes_fondos">
                     <img src="./public/images/silhouettes tee.webp" alt="imagen de camisa de placebo">
                 </article>
+                <!-- aqui usando el anchor genero la linea inferior y el cambio de puntero a los nombres de todos los productor -->
                 <a href="">
                     <h3>Silhouttes tee</h3>
                 </a>
                 <p>$30.00</p>
-
-                <button>
+                <a href="">
+                                   <button>
+                    <!-- usando la clase rayita_inferior puedo hacer que aparezca la raya del anchor con sus propios colores y evitar conflictos con otros anchors -->
                     <article class="rayita_inferior">
                         <a href="">
                             <span>
@@ -178,6 +187,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+ 
 
             </article>
             <article class="cuadrito_compras">
@@ -188,7 +199,8 @@ Fecha:8 de Abril de 2024
                     <h3>Nanci boy</h3>
                 </a>
                 <p>$15.00</p>
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                         <a href="">
                             <span>Add to Cart</span>
@@ -196,6 +208,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+
             </article>
             <article class="cuadrito_compras" id="special">
                 <article class="imagenes_fondos">
@@ -211,8 +225,8 @@ Fecha:8 de Abril de 2024
 
                 <p>$30.00</p>
 
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                         <a href="">
 
@@ -222,6 +236,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+
 
             </article>
             <article class="cuadrito_compras">
@@ -233,14 +249,16 @@ Fecha:8 de Abril de 2024
                     <h3>You wanted shopper</h3>
                 </a>
                 <p>$20.00</p>
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior"> <a href="">
                             <span>Add to Cart</span>
 
                         </a></article>
 
                 </button>
+                </a>
+
 
             </article>
             <article class="cuadrito_compras">
@@ -252,8 +270,8 @@ Fecha:8 de Abril de 2024
                     <h3>Placeboxlive - boxset</h3>
                 </a>
                 <p>$99.99</p>
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                                             <a href="">
                         <span>Add to Cart</span>
@@ -262,6 +280,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+
 
             </article>
             <article class="cuadrito_compras">
@@ -274,8 +294,8 @@ Fecha:8 de Abril de 2024
                     <h3>Sleeping with ghosts vinyl</h3>
                 </a>
                 <p>$16.00</p>
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                                             <a href="">
                         <span>Add to Cart</span>
@@ -284,6 +304,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+
 
             </article>
             <article class="cuadrito_compras">
@@ -296,8 +318,8 @@ Fecha:8 de Abril de 2024
                     <h3>Without you i'm nothing vinyl</h3>
                 </a>
                 <p>$18.00</p>
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                                             <a href="">
                         <span>Add to Cart</span>
@@ -306,6 +328,8 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+
 
             </article>
             <article class="cuadrito_compras">
@@ -318,8 +342,8 @@ Fecha:8 de Abril de 2024
                     <h3>Black Market Music vinyl</h3>
                 </a>
                 <p>$18.00</p>
-
-                <button>
+                <a href="">
+                                    <button>
                     <article class="rayita_inferior">
                                             <a href="">
                         <span>Add to Cart</span>
@@ -328,87 +352,94 @@ Fecha:8 de Abril de 2024
                     </article>
 
                 </button>
+                </a>
+>
 
             </article>
         </section>
+        <!-- aqui esta la zona con todos los conciertos fechas lugares y botones para asi darles ubicacion en la web -->
         <section class="conciertos_fechas">
+            <!-- aqui se ubican los titulos del apartado con su clase para futura decoracion -->
             <article class="titulos">
-                <h2 class="title">
+                <h2 >
                     Playing near you
                 </h2>
-                <h2 class="subititle">
+                <h2 >
                     Track to get concert, live stream and tour updates
                 </h2>
             </article>
-
+            <!-- aqui genero un formato general para cada una de las partes generando las clases comunes y dando orden de ubicacion a los anchors y buttons para un funcionamiento apropiado  -->
             <article class="comprar_tickets">
                 <div class="apartado_ticket">
                     <p>May,8,2024</p>
                     <p>Pionertown,CA</p>
-                    <button>
-                        <span> <a href="">
+                    <a href=""> <button>
+
+                        <span>
                                 Tickets
-                            </a></span>
-                    </button>
+                            </span>
+                    </button></a>
                 </div>
 
                 <div class="apartado_ticket">
                     <p>May,9,2024</p>
                     <p>Pasadena,CA</p>
-                    <button>
-                        <span><a href="">Tickets</a></span>
-                    </button>
+                    <a href=""><button>
+                        <span>Tickets</span>
+                    </button></a>
                 </div>
 
                 <div class="apartado_ticket">
                     <p>May,11,2024</p>
                     <p>Halifax, United Kingdokm</p>
-                    <button>
+                    <a href=""><button>
                         <span>
-                            <a href="">
+                            
                                 Tickets
-                            </a></span>
-                    </button>
+                            </span>
+                    </button></a>
                 </div>
 
                 <div class="apartado_ticket">
                     <p>May,25,2024</p>
                     <p>Southampton, United Kingdom</p>
-                    <button>
+                    <a href=""><button>
                         <span>
-                            <a href="">
+                            
                                 Tickets
-                            </a></span>
-                    </button>
+                            </span>
+                    </button></a>
                 </div>
 
                 <div class="apartado_ticket" id="last">
                     <p>Jun,28,2024</p>
                     <p>Bristol, United Kingdom</p>
-                    <button>
-                        <span><a href="">
+                    <a href=""><button>
+                        <span>
                                 Tickets
-                            </a></span>
-                    </button>
+                            </span>
+                    </button></a>
                 </div>
 
             </article>
         </section>
         <section>
+            <!-- aqui se coloca el titulo y el boton del apartado todos en un mismo article -->
             <article class="updates">
                 <h3>
                     Get updates on new shows, new music, and more.
                 </h3>
-                <button>
+                <a href=""><button>
                     <p>
-                        <a href="">
+                        
                             Follow
-                        </a>
+                        
 
                     </p>
 
-                </button>
+                </button></a>
             </article>
+            <!-- aqui se coloca el titulo y el boton del apartado todos en un mismo article -->
             <article class="newsletter">
                 <h3>
                     Subscribe to our newsletter
@@ -417,23 +448,24 @@ Fecha:8 de Abril de 2024
                     Stay in the loop with out latest product and music releases. Sign up now to be the first to know and
                     get exclusive access.
                 </p>
-                <button>
-                    <span>
+                <a href=""><button>
                         <p>
-                            <a href="">
+                            
                                 Sign Up
-                            </a>
+                            
 
                         </p>
-
-                    </span>
-                </button>
+                </button></a>
             </article>
         </section>
     </main>
+    <!-- footer -->
     <footer class="footer">
+        <!-- uso esto para organizar de manera mas adecuada el contenido respecto a la pagina -->
         <section class="content_footer">
+            <!-- en esta zona ubico todos los iconos para que se ubiquien mejor en el footer -->
             <section class="iconos">
+                <!-- cada icono se encuentra dentro de su propio article con su respectivo anchor que lo lleva a la red social correspondiente -->
                 <article class="icon_foot">
                     <a
                         href="https://www.facebook.com/people/Viaja-Con-Damyni/pfbid028UgUVCtph968f6UFouYs5ThT2gm1TtFkyzbXpZejmdnQKNFjdHgGnHJmrabNo1Cgl/">
@@ -466,6 +498,7 @@ Fecha:8 de Abril de 2024
 
                 </article>
             </section>
+            <!-- en esta parte coloco los demas textos que van en la parte inferior del footer cada uno dentro de un article con su parrafo y punto propio para ser distinguidos de mejo manera -->
             <section class="partes_extras">
                 <article class="p_foot" id="derechos">
                     <i class="bi bi-cc-circle"></i>

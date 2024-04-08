@@ -1,69 +1,83 @@
 /* Nombre: Mateo Montoya Ospina
 Clan: Gates
 Fecha:8 de Abril de 2024 */
+/* aqui importo los iconos de bootsstrap */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* reajusto todos los detalles de la pagina web por defecto ademas de ubicar el tipo de letra indicado */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;                              
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;        
+    letter-spacing: 1.2px;                      
 }
+/* aqui coloco todos los colores usados dentro de la pagina web llamandolos de acuerdo a cuando sean necesarios */
 :root{
     --negro:rgb(0,0,0);
     --blanco:#f1f1f1;
     --border-right-button:border-right:5px solid blue;
     --border-left-button:border-left:5px solid red;
 }
+/* uso el background image en reemplazo del video y uso un color white ya que este es predominante en todo el proyecto y reduce lineas de codigo */
 body{
     background-image: url(../../public/images/background-page.webp);
     color: white;
 }
+/* le genero el espaciado entre el body y el header ademas de dar color y radio para fines esteticos */
 .header{
     background-color: var(--negro);
     margin: 10px;
     border-radius: 10px;
 }
-
+/* con esto organizo de manera ordenada los elementos del navbar */
 .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+/* con esto separo los elementos textuales del nav respecto al logo*/
 .logo_nav-element{
     display: flex;
     align-items: center;
     gap: 40px;
 }
+/* con esto separo el logo del border del header */
 .imagen_header{
     padding-left: 20px;
 }
+/* con esto le doy caracteristicas visuales al texto mas acordes a lo pedido */
 .elementos_nav_box{
     display: flex;
     gap: 20px;
     font-size: 30px;
     font-weight: bold;
 }
+/* elimino la barra inferior del anchor y le doy color blanco */
 .elemenos_nav a{
     text-decoration: none;
     color: var(--blanco);
 
 }
+/* con esto altero la distancia entre los iconos y la lupa */
 .icons {
     display: flex;
     gap: 40px;
     padding-right: 40px;
 }
+/* en esta parte genero tamaño y caracteristicas mejores */
 .icono_nav a{
     text-decoration: none;
     color: var(--blanco);
     font-weight: bolder;
     font-size: 30px;
 }
+/* con esto centro las cabezas */
 .cabezas_flotantes{
     display: flex;
     justify-content: center;
 }
+/* con esto ubico de manera mas ordenada las imagenes  */
 .watch_tour_order_listen{
     display: flex;
     flex-wrap: wrap;
@@ -72,21 +86,25 @@ body{
     margin-top: 200px;
     gap: 100px;
 }
+/* con esto organizo imagenes texto y la cantidad de espacio que abarcan cada una */
 .apartado_propio{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 40%;
 }
+/* con esto altero el tamaño de las imagenes */
 .apartado_propio img{
     width: 500px;
     height: 500px;
 }
+/* con esto altero el texto-anchor quitando la linea inferior y dando colores contrastantes */
 .apartado_propio a{
     text-decoration: none;
     font-size: 40px;
     color: var(--blanco);
 }
+/* genero el espaciado entre el apartado anterior y este ademas de permitir la reubicacion adecuada de cada imagen en la web y tambien genero un espaciado para cada elemento */
 .zona_compras{
     margin-top: 200px;
     display: flex;
@@ -95,6 +113,7 @@ body{
     justify-content: center;
     gap: 10px;
 }
+/* aqui defino el tamaño que ocupa cada cuadrado ademas de la organizacion de sus elementos */
 .cuadrito_compras{
     width:24%;
     display: flex;
@@ -103,40 +122,45 @@ body{
     gap: 20px;
     margin-bottom: 20px;
 }
-.cuadrito_compras img{
-    width: 80%;
-    height: 80%;
-}
+/* con esto altero el fondo de las imagenes respecto al espacio que ocupan y ubico un fondo para darles relleno*/
 .imagenes_fondos{
     background-color: var(--blanco);
     width: 100%;
 }
+/* con esta linea hago que las imagenes ocupen un 100% del ancho del 24% de la pagina establecido previamente para cada parte de compra */
 .imagenes_fondos img{
     width: 100%;
     height: 100%;
 }
+/* con esto cambio el color del h3 que es un anchor */
 .cuadrito_compras a{
     color:var(--blanco);
 }
+/* con esto evito que solo y unicamente se cambie el tamaño de la letra del h3 y no de su linea inferior */
 .cuadrito_compras h3{
     font-size:40px ;
 }
+/* con esto genero el tamaño de la letra y genero un espacio que separa el texto del boton */
 .cuadrito_compras p{
     font-size: 30px;
     padding-bottom: 70px;
 }
+/* hubo una casuallidad con uno de los apartados por lo que genere sus aspectos propios y no altere la esencia de las demas partes de la compra */
 #special p{
     padding-bottom: 0px;
 }
+/* con esto ensancho y genero un borde mas agradable para el boton */
 .cuadrito_compras button{
 
     border-radius: 10px;
     padding: 20px;
 }
+/* con esta parte evito que la raya inferior no se vea al darle su propio color para esta zona */
 .rayita_inferior a{
     font-size: 40px;
     color: var(--negro)
 }
+/* ubico de manera centrada todos los elementos */
 .conciertos_fechas{
     padding-top: 200px;
     padding-bottom: 200px;
@@ -145,6 +169,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+/* con esto centro mejor en donde queda el titulo */
 .titulos{
     display: flex;
     flex-direction: column;
@@ -152,6 +177,7 @@ body{
     padding-bottom: 50px;
     font-size: 30px;
 }
+/* con esta parte genero espaciado entre el borde de la pagina y el contenido de los conciertos ademas de ubicarlos mejor */
 .comprar_tickets{
     padding-left: 50px;
     padding-right:50px ;
@@ -161,6 +187,7 @@ body{
     flex-wrap: wrap;
     gap: 20px;
 }
+/* con esto reorganizo los elementos con base al espacio que disponene usando el flex y space between ademas de generar las lineas separatorias */
 .apartado_ticket{
     display: flex;
     justify-content: space-between;
@@ -170,31 +197,39 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+/* con esto altero el tamaño y volumen de los textos tipo p y span */
 .apartado_ticket p,span{
     font-size: 20px;
     font-weight: bold;
 }
+/* con esto elimino la linea inferior del a y doy color negro */
 .apartado_ticket a{
     text-decoration: none;
     color: var(--negro);
 }
+/* con esto ensancho el boton */
 .apartado_ticket button{
     margin-right: 20px;
     padding: 5px;
     border-radius: 10px;
 }
+/* con este id genero la linea inferior de la zona de conciertos  */
+#last{
+    padding-bottom: 40px;
+    border-bottom: 2px solid white;
+}
+/* con esto genero la ubicacion del texto y el boton */
 .updates{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#last{
-    border-bottom: 2px solid white;
-}
+/* con esto altero el tamaño y el espaciado del titulo */
 .updates h3{
     font-size: 40px;
     padding: 20px;
 }
+/* las tres siguientes zonas se encuentran enfocadas a dar el tamaño y grosor de la letra y el boton ademas de dar color al anchor y eliminar su linea inferior */
 .updates p{
     font-size: 30px;
     padding: 30px 60px;
@@ -207,16 +242,20 @@ body{
 .updates button{
     border-radius: 40px;
 }
+/* con esto ubico de manera apropiada el apartado de newsletter en la web */
 .newsletter{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/* con esto altero el tamaño de titulo y margen con  los elementos de la pagina que estan proximos */
 .newsletter h3{
     font-size: 40px;
     padding-bottom: 10px;
 }
+/* las tres siguientes zonas se encuentran enfocadas a dar el tamaño y grosor de la letra y el boton ademas de dar color al anchor y eliminar su linea inferior */
+/* con este p tambien altero el texto por debajo del h3 */
 .newsletter p{
     font-size: 30px;
     padding: 30px 60px;
@@ -229,7 +268,7 @@ body{
 .newsletter button{
     border-radius: 40px;
 }
-
+/* con esto organizo la ubicacion de todos los elementos en el footer ademas de generar el color de fondo */
 .footer{
     display: flex;
     justify-content: center;
@@ -241,9 +280,7 @@ body{
     background-color: var(--negro);
 
 }
-.content_footer{
-    width: 100%;
-}
+/* con esto organizo los iconos del footer */
 .iconos{
     display: flex;
     justify-content: center;
@@ -251,9 +288,11 @@ body{
     font-size: 30px;
     padding-bottom: 30px;
 }
+/* con esto genero el cambio de color de los anchors */
 .icon_foot a{
     color: var(--blanco);
 }
+/* con esto distancio los textos en la parte inferior del footer ademas de distribuirlos adecuadamente */
 .partes_extras{
     width: 100%;
     display: flex;
@@ -261,6 +300,7 @@ body{
     gap: 40px;
     font-size: 20px;
 }
+/* con esto permito que el logo del cc se desplaze con su texto correspondiente */
 #derechos{
     display: flex;
 }

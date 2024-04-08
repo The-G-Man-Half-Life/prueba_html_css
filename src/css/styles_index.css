@@ -16,18 +16,17 @@ Fecha:8 de Abril de 2024 */
 :root{
     --negro:rgb(0,0,0);
     --blanco:#f1f1f1;
-    --border-right-button:border-right:5px solid blue;
-    --border-left-button:border-left:5px solid red;
+    --border-right-button:10px solid blue;
+    --border-left-button:10px solid red;
 }
 /* uso el background image en reemplazo del video y uso un color white ya que este es predominante en todo el proyecto y reduce lineas de codigo */
 body{
-    background-image: url(../../public/images/background-page.webp);
     color: white;
 }
 /* le genero el espaciado entre el body y el header ademas de dar color y radio para fines esteticos */
 .header{
     background-color: var(--negro);
-    margin: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 /* con esto organizo de manera ordenada los elementos del navbar */
@@ -152,8 +151,8 @@ body{
 /* con esto ensancho y genero un borde mas agradable para el boton */
 .cuadrito_compras button{
 
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 /* con esta parte evito que la raya inferior no se vea al darle su propio color para esta zona */
 .rayita_inferior a{
@@ -210,8 +209,8 @@ body{
 /* con esto ensancho el boton */
 .apartado_ticket button{
     margin-right: 20px;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 40px;
 }
 /* con este id genero la linea inferior de la zona de conciertos  */
 #last{
@@ -303,4 +302,21 @@ body{
 /* con esto permito que el logo del cc se desplaze con su texto correspondiente */
 #derechos{
     display: flex;
+}
+/* con esta parte genero la animacion de los botones */
+button{
+    transition: 0.2s;
+}
+button:hover{
+    /* border-right: 10px solid blue;
+    border-left: 10px solid red; */
+    border-right:var(--border-right-button);
+    border-left:var(--border-left-button);
+}
+#video{
+    margin: 0;
+    position: fixed;
+    width: 10000px;
+    z-index: -1;
+
 }

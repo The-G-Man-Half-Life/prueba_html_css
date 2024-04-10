@@ -26,8 +26,10 @@ body{
 /* le genero el espaciado entre el body y el header ademas de dar color y radio para fines esteticos */
 .header{
     background-color: var(--negro);
-    padding: 20px;
+    margin: 0px 20px;
     border-radius: 10px;
+    position: relative;
+    top: 10px;
 }
 /* con esto organizo de manera ordenada los elementos del navbar */
 .nav{
@@ -316,7 +318,7 @@ button:hover{
 #video{
     margin: 0;
     position: fixed;
-    width: 10000px;
+    width: 100%;
     z-index: -1;
 
 }
